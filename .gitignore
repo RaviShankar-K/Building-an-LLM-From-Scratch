@@ -4,11 +4,11 @@ part_6/02_dataset-utilities/config.json
 part_6/03_model-evaluation/config.json
 
 # Graphics
-appendix-D/01_main-code/1.pdf
-appendix-D/01_main-code/2.pdf
-appendix-D/01_main-code/3.pdf
+appendix-B/01_main-code/1.pdf
+appendix-B/01_main-code/2.pdf
+appendix-B/01_main-code/3.pdf
 
-appendix-E/01_main-code/loss-plot.pdf
+appendix-C/01_main-code/loss-plot.pdf
 
 part_4/01_main-code/loss-plot.pdf
 part_4/01_main-code/temperature-plot.pdf
@@ -26,8 +26,6 @@ part_6/01_main-code/loss-plot-alpaca52k.pdf
 
 # Checkpoint files
 appendix-A/01_main-code/model.pth
-
-appendix-E/01_main-code/gpt2
 
 part_4/01_main-code/gpt2/
 part_4/02_alternative_weight_loading/checkpoints
@@ -235,6 +233,7 @@ celerybeat.pid
 .venv
 env/
 gpt2/
+llama/
 venv/
 ENV/
 env.bak/
