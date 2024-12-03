@@ -1,7 +1,7 @@
 # Copyright (c) The SkillPedia under Apache License 2.0 (see LICENSE.txt).
 # Source for "Build a Large Language Model From Scratch"
 #   
-# Code: 
+# Code: https://github.com/Sangwan70/Building-an-LLM-From-Scratch
 #
 # This file collects all the relevant code that we covered thus far throughout Parts 1-3.
 # This file can be run as a standalone script.

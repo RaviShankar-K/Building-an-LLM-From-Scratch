@@ -1,9 +1,9 @@
 # Part 1: Working with Text Data
 
 &nbsp;
-## Main Chapter Code
+## Main Code
 
-- [01_main-chapter-code](01_main-chapter-code) contains the main chapter code and exercise solutions
+- [01_main-code](01_main-code) contains the main chapter code and exercise solutions
 
 &nbsp;
 ## Bonus Materials

@@ -1,9 +1,9 @@
 # Part 5: Finetuning for Classification
 
 &nbsp;
-## Main Chapter Code
+## Main Code
 
-- [01_main-chapter-code](01_main-chapter-code) contains the main chapter code
+- [01_main-code](01_main-code) contains the main chapter code
 
 &nbsp;
 ## Bonus Materials

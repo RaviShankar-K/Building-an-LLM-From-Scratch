@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 # Local Setup
 
-This section provides recommendations for running the code in this book locally. Note that the code in the main chapters of this book is designed to run on conventional laptops within a reasonable timeframe and does not require specialized hardware. I tested all main chapters on an M3 MacBook Air laptop. Additionally, if your laptop or desktop computer has an NVIDIA GPU, the code will automatically take advantage of it.
+This section provides recommendations for running the code in this book locally. Note that the code in repository is designed to run on conventional laptops within a reasonable timeframe and does not require specialized hardware. I tested all code on an M3 MacBook Pro Max laptop. Additionally, if your laptop or desktop computer has an NVIDIA GPU, the code will automatically take advantage of it.
 
 &nbsp;
 ## Setting up Python
@@ -51,15 +51,13 @@ If you are using Visual Studio Code (VSCode) as your primary code editor, you ca
 
 To install these, open this "setup" folder in VSCode (File -> Open Folder...) and then click the "Install" button in the pop-up menu on the lower right.
 
-<img src="https://sebastianraschka.com/images/LLMs-from-scratch-images/setup/README/vs-code-extensions.webp?1" alt="1" width="700">
-
 Alternatively, you can move the `.vscode` extension folder into the root directory of this GitHub repository:
 
 ```bash
 mv setup/.vscode ./
 ```
 
-Then, VSCode automatically checks if the recommended extensions are already installed on your system every time you open the `LLMs-from-scratch` main folder.
+Then, VSCode automatically checks if the recommended extensions are already installed on your system every time you open the `Building-an-LLM-From-Scratch` main folder.
 
 &nbsp;
 
@@ -67,7 +65,7 @@ Then, VSCode automatically checks if the recommended extensions are already inst
 
 This section describes cloud alternatives for running the code presented in this book.
 
-While the code can run on conventional laptops and desktop computers without a dedicated GPU, cloud platforms with NVIDIA GPUs can substantially improve the runtime of the code, especially in chapters 5 to 7.
+While the code can run on conventional laptops and desktop computers without a dedicated GPU, cloud platforms with NVIDIA GPUs can substantially improve the runtime of the code, especially in parts 4 to 6.
 
 &nbsp;
 
@@ -78,38 +76,17 @@ For a smooth development experience in the cloud, I recommend the [Lightning AI 
 Once you start a new Studio, you can open the terminal and execute the following setup steps to clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/rasbt/LLMs-from-scratch.git
-cd LLMs-from-scratch
+git clone https://github.com/Sangwan70/Building-an-LLM-From-Scratch.git
+cd Building-an-LLM-From-Scratch
 pip install -r requirements.txt
 ```
 
 (In contrast to Google Colab, these only need to be executed once since the Lightning AI Studio environments are persistent, even if you switch between CPU and GPU machines.)
 
-Then, navigate to the Python script or Jupyter Notebook you want to run. Optionally, you can also easily connect a GPU to accelerate the code's runtime, for example, when you are pretraining the LLM in chapter 5 or finetuning it in chapters 6 and 7.
-
-<img src="https://sebastianraschka.com/images/LLMs-from-scratch-images/setup/README/studio.webp" alt="1" width="700">
-
-&nbsp;
-
-## Using Google Colab
-
-To use a Google Colab environment in the cloud, head over to [https://colab.research.google.com/](https://colab.research.google.com/) and open the respective chapter notebook from the GitHub menu or by dragging the notebook into the *Upload* field as shown in the figure below.
-
-<img src="https://sebastianraschka.com/images/LLMs-from-scratch-images/setup/README/colab_1.webp" alt="1" width="700">
-
-
-Also make sure you upload the relevant files (dataset files and .py files the notebook is importing from) to the Colab environment as well, as shown below.
-
-<img src="https://sebastianraschka.com/images/LLMs-from-scratch-images/setup/README/colab_2.webp" alt="2" width="700">
-
-
-You can optionally run the code on a GPU by changing the *Runtime* as illustrated in the figure below.
-
-<img src="https://sebastianraschka.com/images/LLMs-from-scratch-images/setup/README/colab_3.webp" alt="3" width="700">
-
+Then, navigate to the Python script or Jupyter Notebook you want to run. Optionally, you can also easily connect a GPU to accelerate the code's runtime, for example, when you are pretraining the LLM in part 4 or finetuning it in part 5 and 6.
 
 &nbsp;
 
 # Questions?
 
-If you have any questions, please don't hesitate to reach out via the [Discussions](https://github.com/rasbt/LLMs-from-scratch/discussions) forum in this GitHub repository.
+If you have any questions, please don't hesitate to reach out via the [Discussions](https://github.com/Sangwan70/Building-an-LLM-From-Scratch/discussions) forum in this GitHub repository.
