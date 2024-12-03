@@ -6,7 +6,7 @@ This bonus folder contains code for running a ChatGPT-like user interface to int
 
 
 
-![Chainlit UI example](https://sebastianraschka.com/images/LLMs-from-scratch-images/bonus/chainlit/chainlit-orig.webp)
+![Chainlit UI example](https://raw.githubusercontent.com/Sangwan70/Building-an-LLM-From-Scratch/refs/heads/main/part_4/images/chainlit-orig.webp)
 
 
 
@@ -29,7 +29,7 @@ pip install chainlit
 This folder contains 2 files:
 
 1. [`app_orig.py`](app_orig.py): This file loads and uses the original GPT-2 weights from OpenAI. 
-2. [`app_own.py`](app_own.py): This file loads and uses the GPT-2 weights we generated in chapter 5. This requires that you execute the [`../01_main-chapter-code/ch05.ipynb`](../01_main-chapter-code/ch05.ipynb) file first.
+2. [`app_own.py`](app_own.py): This file loads and uses the GPT-2 weights we generated in chapter 5. This requires that you execute the [`../01_main-code/part_4.ipynb`](../01_main-code/part_4.ipynb) file first.
 
 (Open and inspect these files to learn more.)
 

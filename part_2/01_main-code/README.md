@@ -1,8 +1,8 @@
 # Part 2: Coding Attention Mechanisms
 
-### Main Chapter Code
+### Main Code
 
-- [Part 2: Coding Attention Mechanisms](Part%202%20Coding%20Attention%20Mechanisms.ipynb) contains all the code as it appears in the part.
+- [Part 2: Coding Attention Mechanisms](part_2.ipynb) contains all the code as it appears in the part.
 
 
 ### Optional Code

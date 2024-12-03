@@ -25,7 +25,7 @@ Linux and macOS users can follow these steps to download the dataset (if you are
 
 1. Set the `03_bonus_pretraining_on_gutenberg` folder as working directory to clone the `gutenberg` repository locally in this folder (this is necessary to run the provided scripts `prepare_dataset.py` and `pretraining_simple.py`). For instance, when being in the `LLMs-from-scratch` repository's folder, navigate into the *03_bonus_pretraining_on_gutenberg* folder via:
 ```bash
-cd ch05/03_bonus_pretraining_on_gutenberg
+cd part_4/03_bonus_pretraining_on_gutenberg
 ```
 
 2. Clone the `gutenberg` repository in there:
@@ -90,7 +90,7 @@ python prepare_dataset.py \
 ```
 ...
 Skipping gutenberg/data/raw/PG29836_raw.txt as it does not contain primarily English text.                                     Skipping gutenberg/data/raw/PG16527_raw.txt as it does not contain primarily English text.                                     100%|██████████████████████████████████████████████████████████| 57250/57250 [25:04<00:00, 38.05it/s]
-42 file(s) saved in /Users/sebastian/Developer/LLMs-from-scratch/ch05/03_bonus_pretraining_on_gutenberg/gutenberg_preprocessed
+42 file(s) saved in /Users/sebastian/Developer/LLMs-from-scratch/part_4/03_bonus_pretraining_on_gutenberg/gutenberg_preprocessed
 ```
 
 
@@ -165,10 +165,10 @@ Note that this code focuses on keeping things simple and minimal for educational
 
 1. Modify the `prepare_dataset.py` script to strip the Gutenberg boilerplate text from each book file.
 2. Update the data preparation and loading utilities to pre-tokenize the dataset and save it in a tokenized form so that it doesn't have to be re-tokenized each time when calling the pretraining script.
-3. Update the `train_model_simple` script by adding the features introduced in [Appendix D: Adding Bells and Whistles to the Training Loop](../../appendix-D/01_main-chapter-code/appendix-D.ipynb), namely, cosine decay, linear warmup, and gradient clipping.
-4. Update the pretraining script to save the optimizer state (see section *5.4 Loading and saving weights in PyTorch* in chapter 5; [ch05.ipynb](../../ch05/01_main-chapter-code/ch05.ipynb)) and add the option to load an existing model and optimizer checkpoint and continue training if the training run was interrupted.
+3. Update the `train_model_simple` script by adding the features introduced in [Appendix B: Adding Bells and Whistles to the Training Loop](../../appendix-B/01_main-code/appendix-B.ipynb), namely, cosine decay, linear warmup, and gradient clipping.
+4. Update the pretraining script to save the optimizer state (see section *4.4 Loading and saving weights in PyTorch* in part 4; [part_4.ipynb](../../part_4/01_main-code/part_4.ipynb)) and add the option to load an existing model and optimizer checkpoint and continue training if the training run was interrupted.
 5. Add a more advanced logger (for example, Weights and Biases) to view the loss and validation curves live
-6. Add distributed data parallelism (DDP) and train the model on multiple GPUs (see section *A.9.3 Training with multiple GPUs* in appendix A; [DDP-script.py](../../appendix-A/01_main-chapter-code/DDP-script.py)).
-7. Swap the from scratch `MultiheadAttention` class in the `previous_chapter.py` script with the efficient `MHAPyTorchScaledDotProduct` class implemented in the [Efficient Multi-Head Attention Implementations](../../ch03/02_bonus_efficient-multihead-attention/mha-implementations.ipynb) bonus section, which uses Flash Attention via PyTorch's `nn.functional.scaled_dot_product_attention` function.
+6. Add distributed data parallelism (DDP) and train the model on multiple GPUs (see section *A.9.3 Training with multiple GPUs* in appendix A; [DDP-script.py](../../appendix-A/01_main-code/DDP-script.py)).
+7. Swap the from scratch `MultiheadAttention` class in the `previous_parts.py` script with the efficient `MHAPyTorchScaledDotProduct` class implemented in the [Efficient Multi-Head Attention Implementations](../../part_2/02_bonus_efficient-multihead-attention/mha-implementations.ipynb) bonus section, which uses Flash Attention via PyTorch's `nn.functional.scaled_dot_product_attention` function.
 8. Speeding up the training by optimizing the model via [torch.compile](https://pytorch.org/tutorials/intermediate/torch_compile_tutorial.html) (`model = torch.compile`) or [thunder](https://github.com/Lightning-AI/lightning-thunder) (`model = thunder.jit(model)`).
 9. Implement Gradient Low-Rank Projection (GaLore) to further speed up the pretraining process. This can be achieved by just replacing the `AdamW` optimizer with the provided `GaLoreAdamW` provided in the [GaLore Python library](https://github.com/jiaweizzhao/GaLore).

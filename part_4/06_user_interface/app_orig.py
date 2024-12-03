@@ -1,7 +1,7 @@
 # Copyright (c) The SkillPedia under Apache License 2.0 (see LICENSE.txt).
 # Source for "Build a Large Language Model From Scratch"
 #  
-# Code: 
+# Code: https://github.com/Sangwan70/Building-an-LLM-From-Scratch
 
 import tiktoken
 import torch
@@ -22,11 +22,11 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 def get_model_and_tokenizer():
     """
     Code to load a GPT-2 model with pretrained weights from OpenAI.
-    The code is similar to chapter 5.
+    The code is similar to part 4.
     The model will be downloaded automatically if it doesn't exist in the current folder, yet.
     """
 
-    CHOOSE_MODEL = "gpt2-small (124M)"  # Optionally replace with another model from the model_configs dir below
+    CHOOSE_MODEL = "gpt2-medium (355M)"  # Optionally replace with another model from the model_configs dir below
 
     BASE_CONFIG = {
         "vocab_size": 50257,     # Vocabulary size
@@ -46,7 +46,7 @@ def get_model_and_tokenizer():
 
     BASE_CONFIG.update(model_configs[CHOOSE_MODEL])
 
-    settings, params = download_and_load_gpt2(model_size=model_size, models_dir="gpt2")
+    settings, params = download_and_load_gpt2(model_size=model_size, models_dir="../../gpt2")
 
     gpt = GPTModel(BASE_CONFIG)
     load_weights_into_gpt(gpt, params)

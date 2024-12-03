@@ -1,8 +1,8 @@
 # Part 1: Working with Text Data
 
-### Main Chapter Code
+### Main Code
 
-- [Lab 1 Working with Text.ipynb](Lab%201%20Working%20with%20Text.ipynb) contains all the code as it appears in Part 1.
+- [Lab 1 Working with Text.ipynb](part_t.ipynb) contains all the code as it appears in Part 1.
 
 ### Optional Code
 
