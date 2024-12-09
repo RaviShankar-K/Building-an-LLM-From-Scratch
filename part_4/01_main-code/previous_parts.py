@@ -12,7 +12,7 @@ import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 
 #####################################
-# Chapter 2
+# Part 1
 #####################################
 
 
@@ -54,7 +54,7 @@ def create_dataloader_v1(txt, batch_size=4, max_length=256,
 
 
 #####################################
-# Chapter 3
+# Part 2
 #####################################
 class MultiHeadAttention(nn.Module):
     def __init__(self, d_in, d_out, context_length, dropout, num_heads, qkv_bias=False):
@@ -113,7 +113,7 @@ class MultiHeadAttention(nn.Module):
 
 
 #####################################
-# Chapter 4
+# Part 3
 #####################################
 class LayerNorm(nn.Module):
     def __init__(self, emb_dim):
